@@ -10,32 +10,31 @@
 # Heart-Attack-Prediction
  Trained and predicting the chance of getting heart attack.
 
-
-
 ## Description
-objektif this model blah blah..
-heart attack intro and precaution step...
-
-**You will find a template file and a simple example in the model and trainer folder that shows you how to try your first model simply.**
-
-## To include url link
-
-![markdown_badges]('[https://rahuldkjain.github.io/gh-profile-readme-generator/](https://github.com/Ileriayo/markdown-badges)')
-[url_to_cheat_sheet](https://rahuldkjain.github.io/gh-profile-readme-generator/)
-
+In this model our objective is to predict the possibility that a person might have a chance of getting a heart attack.
+A heart attack (myocardial infarction or MI) is a serious medical emergency in which the supply of blood to the heart is suddenly blocked, usually by a blood clot. A heart attack is a medical emergency. Thus, a precaution step must be taken to avoid any unwanted event.
 
 ## Results
+The best pipeline to be use in this model is Logistic Regression and MinMax Scaler.
 
-accuracy n confussion matrix
-classification report
+![confusionmatrix](static/confusion_matrix.png)
+
+![accuracy](static/classification_report.PNG)
+
 
 ## Discussion
-From this model, around 78% accuracy can be achieved during training. where MinMaxScaler and LogisticRegression have been choosed through pipeline to be the best scaler and training model. Although the accuracy only around 78%, it can be improved by adding more data to it.
-![model developed apps](static/heart_app.png)
-gambar apps
+From this model, around 78% accuracy can be achieved during training. Although the accuracy only around 78%, it can be improved by adding more data to it.
+
+## Application
+By using this model developed, an app is created to be used for predicting the possibility of a person to have heart attack depending on a certain features.
+
+![app1](static/heart_app1.PNG)
+
+![app2](static/heart_app2.PNG)
 
 
 ## Credits
+The data for this project is downloaded from kaggle.
 [kaggle](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysisprediction-dataset)
 
-this data is download from kaggle
+
