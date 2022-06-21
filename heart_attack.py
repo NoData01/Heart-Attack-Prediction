@@ -239,8 +239,8 @@ accuracy of {}'.format(best_scaler,best_accuracy))
 
 
 #%%  This is to fine tune the model
-#From the pipeline above, it is deduced that the best pipeline with SS+SVC
-#have highest accuracy (0.7802) when tested against the test dataset
+#From the pipeline above, it is deduced that the best pipeline with MMS+Logistic
+#have highest accuracy (0.7692) when tested against the test dataset
 
 step_lr = [('MinMaxScaler', MinMaxScaler()),
            ('LogisticRegression', LogisticRegression())]
