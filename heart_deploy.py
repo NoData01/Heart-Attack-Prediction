@@ -89,5 +89,5 @@ with st.form("patients info"):
           st.balloons()
           st.write('Congratulations, it seems you are healthy :thumbsup:')
 
-# For the test data, there is 8 out of 10 the test correctly,
-# therefore our model have around 80% accuracy
+# For the test data, 9 out of 10 were tested correctly,(row=8,false)
+# therefore, our model have around 90% accuracy
