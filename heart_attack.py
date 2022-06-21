@@ -85,7 +85,7 @@ def cramers_corrected_stat(confussion_matrix):
 
 
 #%% Statics
-HEART_DATASET_PATH = os.path.join(os.getcwd(),'heart.csv')
+HEART_DATASET_PATH = os.path.join(os.getcwd(),'dataset','heart.csv')
 BEST_MODEL_PATH = os.path.join(os.getcwd(),'best_model.pkl')
 BEST_PIPE_PATH = os.path.join(os.getcwd(),'best_pipeline.pkl')
 
@@ -248,7 +248,7 @@ step_lr = [('MinMaxScaler', MinMaxScaler()),
 pipeline_lr = Pipeline(step_lr)
 
 grid_param = [{'LogisticRegression':[LogisticRegression()],
-               'LogisticRegression__dual':[True,False],
+               'LogisticRegression__solver':['liblinear'],
                'LogisticRegression__C':[0.1,1.0,10.0],
                'LogisticRegression__max_iter':[10,100,1000]}]
 
@@ -257,7 +257,9 @@ best_model = gridsearch.fit(X_train,y_train)
 
 #%% Retrain your model the selected parameters
 step_lr = [('MinMaxScaler', MinMaxScaler()),
-            ('LogisticRegression', LogisticRegression())]
+            ('LogisticRegression', LogisticRegression(solver='liblinear',
+                                                      C=1.0,
+                                                      max_iter=10))]
 
 pipeline_lr = Pipeline(step_lr)
 pipeline_lr.fit(X_train,y_train)
