@@ -17,9 +17,9 @@ with open(MODEL_PATH,'rb') as file:
 
 
 #%%To test
-# # X_new = [65,3,142,220,158,2.3,1] #1
-# X_new = [61,0,140,207,138,1.9,3] #0
-# # ['age','cp','trtbps','chol','thalachh','oldpeak','thall']
+# X_new = [65,3,142,220,158,2.3,1] #1
+
+# ['age','cp','trtbps','chol','thalachh','oldpeak','thall']
 # outcome = model.predict(np.expand_dims(np.array(X_new),axis=0))
 # print(outcome)
 #%%
@@ -89,4 +89,5 @@ with st.form("patients info"):
           st.balloons()
           st.write('Congratulations, it seems you are healthy :thumbsup:')
 
-
+# For the test data, there is 8 out of 10 the test correctly,
+# therefore our model have around 80% accuracy
