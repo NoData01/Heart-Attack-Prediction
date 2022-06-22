@@ -7,6 +7,8 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 
+![heart](static/heart2.png)
+
 # Heart-Attack-Prediction :bangbang:
 Trained and predicting the chance of getting heart attack.
 This project aims to implement a robust machine learning model that can efficiently predict the risk of a heart attack of a human in the future, based on the conditions or symptoms that he/she posses.
@@ -19,10 +21,10 @@ A heart attack (myocardial infarction or MI) is a serious medical emergency in w
 Data preparation is the primary step for any machine learning problem. By using a dataset from Kaggle for this problem. This dataset consists of one CSV files that will be use for training. There is a total of 14 columns in the dataset out of which 13 columns represent the features and the last column is the output of the heart attack chances.
 
 - Data Inspection/ Visualization:
-Here is where the data visualization is carried on. The mean, median, standard deviation, outliers, graph and etc are all presented in this section for the better understanding baout our dataset.
+Here is where the data visualization is carried on. The mean, median, standard deviation, outliers, graph and etc are all presented in this section for the better understanding about our dataset.
 
 - Cleaning the Data: 
-Cleaning is the most important step in a machine learning project. The quality of our data determines the quality of our machine learning model. So it is always necessary to clean the data before feeding it to the model for training. In our dataset all the columns are numerical, the target column and thse same goes to our target column.
+Cleaning is the most important step in a machine learning project. The quality of our data determines the quality of our machine learning model. So it is always necessary to clean the data before feeding it to the model for training. In our dataset all the columns are numerical, the target column and the same goes to our target column.
 
 - Feature Selection:
 Feature Selection is the method of reducing the input variable to the model by using only relevant data and getting rid of noise in data. It is the process of automatically choosing relevant features for the machine learning model based on the type of problem that need to solve. Since the target column in this project is the categorical type, Cramer's V is been used to solve the categorical vs categorical data type while logistic regression is for continuous vs categorical.
